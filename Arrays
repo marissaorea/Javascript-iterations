@@ -1,0 +1,49 @@
+
+// printReverse([1,2,3,4]);
+
+function printReverse(arr) {
+for(var i = arr.length - 1; i >= 0; i--) { // the index is being decremented 
+	console.log(arr[i]);
+	}
+}
+
+//write a function which takr an array as an argument
+//and returns tru is all elemetns in the array are identical
+
+
+function isUniform(arr) {
+	//var first = arr[0];
+	for(var i = 0; i < arr.length; i++) {
+		if(arr[i] === arr[i+1]) {
+			return true;
+		}
+	}
+			return false;
+}
+ 
+//sum array is a function that should take an array of 
+//numbers and returns the sum of all numbers in the array
+
+sumArray([1,2,3,100]);
+
+function sumArray(arr) {
+	var result = 0; 
+	for(var i = 0; i < arr.length; i++) {
+		 result = result + arr[i]
+
+	}
+		return result;
+}
+
+//pulling the max number 
+ max([34, 67, 200]);
+
+ function max(arr) {
+ 	var maximum = arr[0];
+ 	for(var i = 1; i < arr.length; i++) {
+ 		if(arr[i] > maximum) {
+ 		 maximum = arr[i];
+ 		} 
+ 	}
+ 	return maximum;
+ }
